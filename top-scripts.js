@@ -3,8 +3,8 @@ var O2 = {
 	_lang: "cz",
 	_run: [],
 	_paths: {
-		js_modal_dialog: "/include/modal_dialog.js",
-		css_modal_dialog: "/include/modal_dialog.css"
+		js_modal_dialog: "modal_dialog.js",
+		css_modal_dialog: "modal_dialog.css"
 	}
 };
 /*!

@@ -3809,7 +3809,7 @@ form.form-narrow div.validation.error {
     width: 73%;
 }
 #page {
-    background: url("/include/page_bg.png") repeat-x scroll 0 0 #FFFFFF;
+    background: url("page_bg.png") repeat-x scroll 0 0 #FFFFFF;
 }
 #page #custom-bg {
     background: url("/public/85/42/20/274598_635763_custom_bg.png") no-repeat scroll center top rgba(0, 0, 0, 0);
