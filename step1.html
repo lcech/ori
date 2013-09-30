@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html id="html" class="js-enabled sIFR-active"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>O2 | Váš názor nás zajímá</title>
+	<link rel="stylesheet" type="text/css" href="include/main_css_bundle.css">
+	<link rel="stylesheet" type="text/css" href="include/style.css">
+	<style>
+		body { background-color: #fff; }
+		h1 { width: auto; }
+	</style>
+	<script type="text/javascript" src="include/top-scripts.js"></script>
+</head>
+<body id="osobni" class="cz logged iframe cat-osobni">
+
+
+<div class="content">
+<script src="include/js_survey_min.js"></script>
+<script src="include/jquery_cookie.js"></script>
+<div id="surveyPopup">
+
+<h2>1. Jaký je důvod Vaší návštěvy?</h2>
+<form action="step2.html" method="post" name="contentForm">
+	<fieldset>
+	<table>
+		<tbody>
+			<tr>
+<td class="input"><input name="question1" id="shop" value="objednavka" type="radio"></td>
+				<td colspan="2"><label for="shop">On-line objednávka</label></td>
+</tr>
+			<tr>
+				<td class="input"><input name="question1" id="find_service" value="sluzby" type="radio"></td>
+				<td colspan="2"><label for="find_service">Informace nabídkách a službách</label></td>
+			</tr>
+<tr>
+				<td class="input"><input name="question1" id="tech_support" value="tech-support" type="radio"></td>
+				<td colspan="2"><label for="tech_support">Technická podpora</label></td>
+			</tr>
+			<tr>
+				<td class="input"><input name="question1" id="find_device" value="telefony" type="radio"></td>
+				<td colspan="2"><label for="find_device">Telefony nebo zařízení</label></td>
+			</tr>
+<tr>
+				<td class="input"><input name="question1" id="account" value="vyuctovani" type="radio"></td>
+				<td colspan="2"><label for="account">Moje O2, vyúčtování</label></td>
+			</tr>
+<tr>
+				<td class="input"><input name="question1" id="find_contact" value="kontakty" type="radio"></td>
+				<td colspan="2"><label for="find_contact">Kontakty</label></td>
+			</tr>
+			<tr>
+				<td class="input"><input name="question1" id="other" value="jine" type="radio"></td>
+				<td>
+					<label id="label-other" for="other">Jiný</label>
+				</td>
+				<td>
+					&nbsp;(prosím uveďte důvod) <input id="question1_text" name="question1_text" type="text" size="40">
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<script type="text/javascript">
+		jQuery("#question1_text").change(function(){
+			jQuery("#other").attr("checked", "checked");
+		});
+	</script>
+<input type="hidden" name="utma" value="1.1376958712.1378295938.1379916659.1380212126.10" />
+<input type="hidden" name="utmz" id="utmz" />
+	<input type="hidden" name="ip_address" value="160.218.240.66" />
+	<input type="hidden" name="browser" id="browser" />
+	<input type="hidden" name="operating_system" id="operating_system" />
+	<input type="hidden" name="screen_resolution" id="resolution" />
+	<input type="hidden" name="segment" id="segment" value="1" />
+<script type="text/javascript">
+		document.getElementById('browser').value = UserInfo.browser;
+		document.getElementById('operating_system').value = UserInfo.OS;
+		document.getElementById('resolution').value = UserInfo.resolution;
+		document.getElementById('utmz').value = jQuery.cookie('__utmz');
+	</script>
+</fieldset>
+<div class="white">
+	<br>
+
+<button type="submit"
+		class="button blue"
+		
+		
+		
+	>
+		<span class="bt">	
+<span class="bi">Pokračovat</span>
+</span>
+	</button>
+</div></form>
+</div>
+</div>
+</div></body></html>

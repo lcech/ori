@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html id="html" class="js-enabled sIFR-active"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>O2 | Váš názor nás zajímá</title>
+	<link rel="stylesheet" type="text/css" href="include/main_css_bundle.css">
+	<link rel="stylesheet" type="text/css" href="include/style.css">
+	<style>
+		body { background-color: #fff; }
+		h1 { width: auto; }
+	</style>
+	<script type="text/javascript" src="include/top-scripts.js"></script>
+</head>
+<body id="osobni" class="cz logged iframe cat-osobni">
+<script type="text/javascript">
+	jQuery.cookie("survey", "TRUE", {
+		expires : 30,
+		path : '/',
+		domain : 'ori.bumbo.etn'
+	});
+	function closeSurvey() {
+		jQuery.cookie("survey", "FALSE", {
+			expires : 30,
+			path : '/',
+			domain : 'ori.bumbo.etn'
+		});
+		parent.jQuery.hideModal();
+	}
+</script>
+<div class="content">
+<script src="include/js_survey_min.js"></script>
+<h1>Pomozte nám zlepšit web O2.cz</h1>
+<p>Plní náš web vaše očekávání? Vaše odpovědi jej pomáhají zlepšit.
+<ul class="points">
+	<li>Položíme vám tři jednoduché otázky</li>
+	<li>Zabere vám to méně než minutu</li>
+</ul>
+</p>
+<p><strong>Spustit dotazník jako:</strong></p>
+<p>
+<a href="step1.html" class="button"><strong>Domácnost</strong></a>
+<a href="step1.html" class="button" title="S měsíční útratou do 5000 Kč"><strong>Podnikatel</strong></a>
+<a href="step1.html" class="button" title="S měsíční útratou nad 5000 Kč"><strong>Firma nebo korporace</strong></a>
+</p>
+<p>
+	<span id="zpet" style="float:left;"><a href="javascript:void(0);" onclick="closeSurvey();">Nemám zájem</a></span>
+</p>
+</div>
+</body>
+</html>
