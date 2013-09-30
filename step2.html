@@ -1,114 +1,109 @@
 <!DOCTYPE html>
-<html id="html" class="js-enabled sIFR-active"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<meta charset="utf-8">
-	<title>O2 | Váš názor nás zajímá</title>
-	<link rel="stylesheet" type="text/css" href="main_css_bundle.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<style>
-		body { background-color: #fff; }
-		h1 { width: auto; }
-	</style>
-	<script type="text/javascript" src="top-scripts.js"></script>
-</head>
-<body id="osobni" class="cz logged iframe cat-osobni">
-
-
-<div class="content">
-<script src="js_survey_min.js"></script>
-<script src="jquery_cookie.js"></script>
-<div id="surveyPopup">
-
-<script type="text/javascript">
-	var sqTimeout = {
-		init: function () {
-			var self = this;
-			this.countdown = 10;
-			this.timeoutOffset = 1000;
-			this.timeoutHandler = null;
-			this.sqButton = jQuery("#sqButton");
-			this.sqCounter = jQuery("#sqCounter");
-			this.sqButton.click({sqTimeout: this}, function (e) {
-				e.data.sqTimeout.showSecondQuestion();
-				parent.O2.modalDialog.hide();
-			});
-			this.runTimeout();
-		},
-		runTimeout: function () {
-			var that = this;
-			if (this.countdown > 0) {
-				this.sqCounter.text(this.countdown);
-				this.countdown--;
-				this.timeoutHandler = window.setTimeout(function() {
-					that.runTimeout.call(that);
-				}, this.timeoutOffset);
-			} else {
-				//this.showSecondQuestion();
-				//parent.O2.modalDialog.hide();
-			}
-		},
-		showSecondQuestion: function (e) {
-			if (typeof e !== "undefined") {
-	  			window.clearTimeout(this.timeoutHandler);
-	  		}
-			jQuery("#instruction").hide();
-			jQuery("#second-question").show();
-		}
-	};
-	jQuery(document).ready(function () {
-		sqTimeout.init();
-	});
-</script>
-<div id="instruction">
-	<h2>Nyní se vraťte na web, dotazník dokončíte později</h2>
-	Dotazník zůstane aktivní na spodu stránky a až budete
-	s prohlížením webu O2.cz hotovi, můžete jej znovu vyvolat.
-	<br><br>
-	<a class="button blue" href="javascript:void(0)" id="sqButton">
-		<span class="bt"><span class="bi">Pokračovat na web (<span id="sqCounter">10</span>)</span></span>
-	</a>
-	<br><br>
-</div>
-<div id="second-question" style="display: none">
-	<h2>2.
- 	Našli jste na webu O2.cz, co jste hledali?
-</h2>
-<form action="step4.html" method="GET" name="contentForm">
-	<fieldset>
-		<table id="answer">
-			<tbody>
-				<tr>
-					<td class="input"><input type="radio" name="question2" id="yes" value="ano" data-msg="Máte nějaké další podněty ke zlepšení?"></td>
-					<td><label for="yes">Ano</label></td>
-				</tr>
-				<tr>
-					<td class="input"><input type="radio" name="question2" id="no" value="ne" data-msg="Sdělte nám víc, abychom pro vás mohli stránky zdokonalit."></td>
-					<td><label for="no">Ne</label></td>
-				</tr>
-			</tbody>
-		</table>
-		<div id="id-text_question" class="clear" style="display:none;">
-			<label id="id-text_question_label" for="question2_text">Napiště nám, co můžeme na webu O2.cz zlepšit <em>(volitelné)</em></label>
-			<textarea cols="60" rows="4" name="question2_text" id="question2_text"></textarea>
+<html id="html" class="js-enabled sIFR-active">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>O2 | Váš názor nás zajímá</title>
+		<link rel="stylesheet" type="text/css" href="main_css_bundle.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<style type="text/css">
+			body { background-color: #fff; }
+			h1 { width: auto; }
+		</style>
+		<script type="text/javascript" src="top-scripts.js"></script>
+		<script type="text/javascript" src="js_survey_min.js"></script>
+		<script type="text/javascript" src="jquery_cookie.js"></script>
+	</head>
+	<body id="osobni" class="cz logged iframe cat-osobni">
+		<div class="content">
+			<div id="surveyPopup">
+				<script type="text/javascript">
+					var sqTimeout = {
+						init: function () {
+							var self = this;
+							this.countdown = 10;
+							this.timeoutOffset = 1000;
+							this.timeoutHandler = null;
+							this.sqButton = jQuery("#sqButton");
+							this.sqCounter = jQuery("#sqCounter");
+							this.sqButton.click({sqTimeout: this}, function (e) {
+								e.data.sqTimeout.showSecondQuestion();
+								parent.O2.modalDialog.hide();
+							});
+							this.runTimeout();
+						},
+						runTimeout: function () {
+							var that = this;
+							if (this.countdown > 0) {
+								this.sqCounter.text(this.countdown);
+								this.countdown--;
+								this.timeoutHandler = window.setTimeout(function() {
+									that.runTimeout.call(that);
+								}, this.timeoutOffset);
+							} else {
+								//this.showSecondQuestion();
+								//parent.O2.modalDialog.hide();
+							}
+						},
+						showSecondQuestion: function (e) {
+							if (typeof e !== "undefined") {
+					  			window.clearTimeout(this.timeoutHandler);
+					  		}
+							jQuery("#instruction").hide();
+							jQuery("#second-question").show();
+						}
+					};
+					jQuery(document).ready(function () {
+						sqTimeout.init();
+					});
+				</script>
+				<div id="instruction">
+					<h2>Nyní se vraťte na web, dotazník dokončíte později</h2>
+					Dotazník zůstane aktivní na spodu stránky a až budete
+					s prohlížením webu O2.cz hotovi, můžete jej znovu vyvolat.
+					<br><br>
+					<a class="button blue" href="javascript:void(0)" id="sqButton">
+						<span class="bt"><span class="bi">Pokračovat na web (<span id="sqCounter">10</span>)</span></span>
+					</a>
+					<br><br>
+				</div>
+				<div id="second-question" style="display: none">
+					<h2>2. Našli jste na webu O2.cz, co jste hledali?</h2>
+					<form action="step4.html" method="GET" name="contentForm">
+						<fieldset>
+							<table id="answer">
+								<tbody>
+									<tr>
+										<td class="input"><input type="radio" name="question2" id="yes" value="ano" data-msg="Máte nějaké další podněty ke zlepšení?"></td>
+										<td><label for="yes">Ano</label></td>
+									</tr>
+									<tr>
+										<td class="input"><input type="radio" name="question2" id="no" value="ne" data-msg="Sdělte nám víc, abychom pro vás mohli stránky zdokonalit."></td>
+										<td><label for="no">Ne</label></td>
+									</tr>
+								</tbody>
+							</table>
+							<div id="id-text_question" class="clear" style="display:none;">
+								<label id="id-text_question_label" for="question2_text">Napiště nám, co můžeme na webu O2.cz zlepšit <em>(volitelné)</em></label>
+								<textarea cols="60" rows="4" name="question2_text" id="question2_text"></textarea>
+							</div>
+							<script type="text/javascript">
+								jQuery("#answer").find("input").change(function() {
+									jQuery("#id-text_question_label").html(jQuery(this).data("msg"));
+									jQuery("#id-text_question").show();
+								});
+							</script>
+							<input type="hidden" name="updatedRecordKey" value="207066">
+						</fieldset>
+						<div class="white">
+							<br />
+							<button type="submit" class="button blue">
+								<span class="bt"><span class="bi">Pokračovat</span></span>
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
 		</div>
-		<script type="text/javascript">
-			jQuery("#answer").find("input").change(function() {
-				jQuery("#id-text_question_label").html(jQuery(this).data("msg"));
-				jQuery("#id-text_question").show();
-			});
-		</script>
-		<input type="hidden" name="updatedRecordKey" value="207066">
-	</fieldset>
-<div class="white">
-	<br />
-	<button type="submit" class="button blue">
-		<span class="bt"><span class="bi">Pokračovat</span></span>
-	</button>
-</div>
-</form>
-</div>
-
-</div>
-</div>
-
-</body></html>
+	</body>
+</html>

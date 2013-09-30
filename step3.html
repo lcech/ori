@@ -1,93 +1,91 @@
 <!DOCTYPE html>
 <html id="html" class="js-disabled">
-<head>
-	<meta charset="utf-8">
-	<title>O2 | Váš názor nás zajímá</title>
-	<link rel="stylesheet" type="text/css" href="main_css_bundle.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<style>
-		body { background-color: #fff; }
-		h1 { width: auto; }
-	</style>
-	<script type="text/javascript" src="top-scripts.js"></script>
-</head>
-<body id="osobni" class="cz logged iframe cat-osobni">
-
-
-<div class="content">
-<script src="js_survey_min.js"></script>
-<script src="jquery_cookie.js"></script>
-<div id="surveyPopup">
-
-<div id="third-question">
-<h2>3. Jak jste celkově spokojeni s webem O2.cz?</h2>
-<p>Oznámkujte web O2.cz v následujících kategoriích:</p>
-<form action="step4.html" method="GET" name="contentForm">
-	<fieldset>
-		<table id="rate" class="stripes">
-			<thead>
-				<tr>
-					<th>&nbsp;</th>
-					<th class="input"><img src="smile_24.png" alt="nejlepší"></th>
-					<th class="input">1</th>
-					<th class="input">2</th>
-					<th class="input">3</th>
-					<th class="input">4</th>
-					<th class="input">5</th>
-					<th class="input"><img src="smile_confused_24.png" alt="nejhorší"></th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td><strong>Přehlednost</strong></td>
-					<td></td>
-					<td class="input"><input type="radio" name="question3" id="rate_3_1" value="1"></td>
-					<td class="input"><input type="radio" name="question3" id="rate_3_2" value="2"></td>
-					<td class="input"><input type="radio" name="question3" id="rate_3_3" value="3"></td>
-					<td class="input"><input type="radio" name="question3" id="rate_3_4" value="4"></td>
-					<td class="input"><input type="radio" name="question3" id="rate_3_5" value="5"></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td><strong>Rozsah informací</strong></td>
-					<td></td>
-					<td class="input"><input type="radio" name="question4" id="rate_4_1" value="1"></td>
-					<td class="input"><input type="radio" name="question4" id="rate_4_2" value="2"></td>
-					<td class="input"><input type="radio" name="question4" id="rate_4_3" value="3"></td>
-					<td class="input"><input type="radio" name="question4" id="rate_4_4" value="4"></td>
-					<td class="input"><input type="radio" name="question4" id="rate_4_5" value="5"></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td><strong>Je snadné najít informace</strong></td>
-					<td></td>
-					<td class="input"><input type="radio" name="question5" id="rate_5_1" value="1"></td>
-					<td class="input"><input type="radio" name="question5" id="rate_5_2" value="2"></td>
-					<td class="input"><input type="radio" name="question5" id="rate_5_3" value="3"></td>
-					<td class="input"><input type="radio" name="question5" id="rate_5_4" value="4"></td>
-					<td class="input"><input type="radio" name="question5" id="rate_5_5" value="5"></td>
-					<td></td>
-				</tr>
-			</tbody>
-		</table>
-	</fieldset>
-	
-	<fieldset>
-		<div id="id-text_question" class="clear">
-			<label id="id-text_question_label" for="question6_text">Zde můžete své hodnocení okomentovat <em>(volitelné)</em></label>
-			<textarea cols="60" rows="4" name="question6_text" id="question6_text"></textarea>
+	<head>
+		<meta charset="utf-8">
+		<title>O2 | Váš názor nás zajímá</title>
+		<link rel="stylesheet" type="text/css" href="main_css_bundle.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<style type="text/css">
+			body { background-color: #fff; }
+			h1 { width: auto; }
+		</style>
+		<script type="text/javascript" src="top-scripts.js"></script>
+		<script type="text/javascript" src="js_survey_min.js"></script>
+		<script type="text/javascript" src="jquery_cookie.js"></script>
+	</head>
+	<body id="osobni" class="cz logged iframe cat-osobni">
+		<div class="content">
+			<div id="surveyPopup">
+				<div id="third-question">
+					<h2>3. Jak jste celkově spokojeni s webem O2.cz?</h2>
+					<p>Oznámkujte web O2.cz v následujících kategoriích:</p>
+					<form action="step4.html" method="GET" name="contentForm">
+						<fieldset>
+							<table id="rate" class="stripes">
+								<thead>
+									<tr>
+										<th>&nbsp;</th>
+										<th class="input"><img src="smile_24.png" alt="nejlepší"></th>
+										<th class="input">1</th>
+										<th class="input">2</th>
+										<th class="input">3</th>
+										<th class="input">4</th>
+										<th class="input">5</th>
+										<th class="input"><img src="smile_confused_24.png" alt="nejhorší"></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><strong>Přehlednost</strong></td>
+										<td></td>
+										<td class="input"><input type="radio" name="question3" id="rate_3_1" value="1"></td>
+										<td class="input"><input type="radio" name="question3" id="rate_3_2" value="2"></td>
+										<td class="input"><input type="radio" name="question3" id="rate_3_3" value="3"></td>
+										<td class="input"><input type="radio" name="question3" id="rate_3_4" value="4"></td>
+										<td class="input"><input type="radio" name="question3" id="rate_3_5" value="5"></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td><strong>Rozsah informací</strong></td>
+										<td></td>
+										<td class="input"><input type="radio" name="question4" id="rate_4_1" value="1"></td>
+										<td class="input"><input type="radio" name="question4" id="rate_4_2" value="2"></td>
+										<td class="input"><input type="radio" name="question4" id="rate_4_3" value="3"></td>
+										<td class="input"><input type="radio" name="question4" id="rate_4_4" value="4"></td>
+										<td class="input"><input type="radio" name="question4" id="rate_4_5" value="5"></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td><strong>Je snadné najít informace</strong></td>
+										<td></td>
+										<td class="input"><input type="radio" name="question5" id="rate_5_1" value="1"></td>
+										<td class="input"><input type="radio" name="question5" id="rate_5_2" value="2"></td>
+										<td class="input"><input type="radio" name="question5" id="rate_5_3" value="3"></td>
+										<td class="input"><input type="radio" name="question5" id="rate_5_4" value="4"></td>
+										<td class="input"><input type="radio" name="question5" id="rate_5_5" value="5"></td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</fieldset>
+						
+						<fieldset>
+							<div id="id-text_question" class="clear">
+								<label id="id-text_question_label" for="question6_text">Zde můžete své hodnocení okomentovat <em>(volitelné)</em></label>
+								<textarea cols="60" rows="4" name="question6_text" id="question6_text"></textarea>
+							</div>
+							<input type="hidden" name="updatedRecordKey" value="207066">
+						</fieldset>
+						
+						<div class="white">
+							<br />
+							<button type="submit" class="button blue">
+								<span class="bt"><span class="bi">Odeslat</span></span>
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
 		</div>
-		<input type="hidden" name="updatedRecordKey" value="207066">
-	</fieldset>
-	
-<div class="white">
-	<br />
-	<button type="submit" class="button blue">
-		<span class="bt"><span class="bi">Odeslat</span></span>
-	</button>
-</div>
-</form></div>
-</div>
-
-</body>
+	</body>
 </html>
